@@ -9,7 +9,7 @@ public class Day2 {
         // Part 1
         int depthPt1 = 0, horizontalPositionPt1 = 0;
 
-        for (String[] movement:PLANNED_COURSE) {
+        for (String[] movement : PLANNED_COURSE) {
             switch (movement[0]) {
                 case "forward" -> horizontalPositionPt1 += Integer.parseInt(movement[1]);
                 case "up" -> depthPt1 -= Integer.parseInt(movement[1]);
@@ -25,7 +25,7 @@ public class Day2 {
         // Part 2
         int depthPt2 = 0, horizontalPositionPt2 = 0, aim = 0;
 
-        for (String[] movement:PLANNED_COURSE) {
+        for (String[] movement : PLANNED_COURSE) {
             switch (movement[0]) {
                 case "forward":
                     horizontalPositionPt2 += Integer.parseInt(movement[1]);
@@ -42,8 +42,8 @@ public class Day2 {
 
         System.out.println("====PART 2====");
         System.out.println("Depth: " + depthPt2 + "\n"
-                        + "Horizontal position: " + horizontalPositionPt2 + "\n"
-                        + "Aim: " + aim + "\n"
-                        + "Result ==> " + ((long) depthPt2 * horizontalPositionPt2));
+                + "Horizontal position: " + horizontalPositionPt2 + "\n"
+                + "Aim: " + aim + "\n"
+                + "Result ==> " + ((long) depthPt2 * horizontalPositionPt2));
     }
 }
