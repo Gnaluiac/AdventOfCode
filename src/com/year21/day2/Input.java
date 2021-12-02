@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Input {
     private static String exampleInput =
-            "forward 5\n" +
+                    "forward 5\n" +
                     "down 5\n" +
                     "forward 8\n" +
                     "up 3\n" +
@@ -1014,12 +1014,12 @@ public class Input {
                     "forward 4\n" +
                     "forward 4\n";
 
-    public static List<String[]> getPlannedCourseAsStringArray(){
+    public static List<String[]> getPlannedCourseAsStringArrayList() {
         String[] s = input.split("\n");
 //        String[] s = exampleInput.split("\n");
         List<String[]> plannedCourse = new ArrayList<>();
 
-        for (String movement:s) {
+        for (String movement : s) {
             String[] splitMovement = movement.split(" ");
             plannedCourse.add(splitMovement);
         }

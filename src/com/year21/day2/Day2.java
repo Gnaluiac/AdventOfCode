@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Day2 {
     public static void main(String[] args) {
-        final List<String[]> PLANNED_COURSE = Input.getPlannedCourseAsStringArray();
+        final List<String[]> PLANNED_COURSE = Input.getPlannedCourseAsStringArrayList();
 
         // Part 1
         int depthPt1 = 0, horizontalPositionPt1 = 0;
