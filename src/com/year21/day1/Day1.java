@@ -2,7 +2,7 @@ package com.year21.day1;
 
 public class Day1 {
     public static void main(String[] args) {
-        final int[] SONAR_READINGS = Input.getSonarReadings();
+        final int[] SONAR_READINGS = ReadFile.getSonarReadings();
 
         // PART 1
         int increaseCountPt1 = 0;

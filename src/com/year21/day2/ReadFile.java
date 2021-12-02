@@ -27,7 +27,7 @@ public class ReadFile {
 
             String[] s = data.split("\n");
 
-            for (String movement:s) {
+            for (String movement : s) {
                 String[] splitMovement = movement.split(" ");
                 plannedCourse.add(splitMovement);
             }
