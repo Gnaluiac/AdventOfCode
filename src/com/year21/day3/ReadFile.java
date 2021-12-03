@@ -12,8 +12,7 @@ import java.util.Scanner;
 public class ReadFile {
 
     public static String[] getDiagnosticReport() {
-//        URL filePath = Day3.class.getResource("input.txt");
-        URL filePath = Day3.class.getResource("exampleInput.txt");
+        URL filePath = Day3.class.getResource("input.txt");
         File input = new File(Objects.requireNonNull(filePath).getFile());
 
         try {
@@ -33,9 +32,4 @@ public class ReadFile {
 
         return null;
     }
-
-
-
-
-
 }
